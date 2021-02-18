@@ -1,0 +1,12 @@
+.dashboard {
+    margin: 3rem 5rem;
+    .dashboard__heading {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .dashboard__section {
+        box-shadow: $shadow-20;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+}

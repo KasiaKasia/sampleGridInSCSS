@@ -1,0 +1,39 @@
+.cards{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .card__section {
+
+        box-shadow: $shadow-20;
+        margin: 0 1rem;
+
+        .card__icons-wrapper {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            margin: 1rem 1rem; 
+            .card__icon {
+                
+            }
+        }
+        .card__info-wrapper{
+            margin: 1rem 2rem;
+            .card__info-wrapper--title{
+              color: $color-green-15; 
+              font-weight: bolder;
+ 
+            }
+            .card__info-wrapper--description{
+                color: $color-green-20;
+            }
+            .card__info-wrapper--link{
+                color: $color-green-55;
+                font-weight: bolder;
+            }
+            .card__info-wrapper--text{
+                color: $color-green-20;
+            }
+        }
+    }
+    
+}
