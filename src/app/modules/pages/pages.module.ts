@@ -13,7 +13,6 @@ import { MemberCardsService } from 'src/app/shared/service/member-cards.service'
     PagesRoutingModule,
     HttpClientModule
   ], 
-  providers: [MemberCardsService],
-  exports: [HomeComponent]
+  providers: [MemberCardsService]
 })
 export class PagesModule { }
