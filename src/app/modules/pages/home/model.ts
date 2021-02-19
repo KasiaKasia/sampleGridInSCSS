@@ -28,3 +28,12 @@ export interface Third {
     imageUrl?: ImageUrl;
     block?: Block;
 }
+export interface Attributes {
+    title?: String;
+    memberCards: MemberCard;
+}
+export interface Data {
+    type?: String;
+    id?: String;
+    attributes?: Attributes
+}

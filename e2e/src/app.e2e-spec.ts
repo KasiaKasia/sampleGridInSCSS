@@ -9,15 +9,9 @@ describe('workspace-project App', () => {
   });
 
   it('should display welcome message', () => {
+    browser.sleep(5000);
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('SampleProject app is running!');
+    expect(page.getTitleText()).toEqual('Our Team');
   });
 
-  afterEach(async () => {
-    // Assert that there are no errors emitted from the browser
-    const logs = await browser.manage().logs().get(logging.Type.BROWSER);
-    expect(logs).not.toContain(jasmine.objectContaining({
-      level: logging.Level.SEVERE,
-    } as logging.Entry));
-  });
 });
