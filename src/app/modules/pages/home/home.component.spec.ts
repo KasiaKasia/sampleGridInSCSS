@@ -20,23 +20,12 @@ describe('HomeComponent', () => {
     })
       .compileComponents();
   });
-
   it('should create the app', () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it('Is the css class called app ', () => {
-    fixture = TestBed.createComponent(HomeComponent);
-    const component = fixture.componentInstance;
-    expect(fixture.debugElement.children[0].attributes.class).toEqual('app');
-  });
-  it('Is the css class called app__page ', () => {
-    fixture = TestBed.createComponent(HomeComponent);
-    const component = fixture.componentInstance;
-    expect(fixture.debugElement.children[0].children[0].attributes.class).toEqual('app__page');
-  });
   it('Unit test Does the scss class exist cards', () => {
     fixture = TestBed.createComponent(HomeComponent);
     const testElementHtmlButton = fixture.debugElement.query(By.css('.cards'));

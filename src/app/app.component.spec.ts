@@ -19,10 +19,14 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
-
-  it(`should have as title 'SampleProject'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+  it('Is the css class called app ', () => {
+   const  fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
+    expect(fixture.debugElement.children[0].attributes.class).toEqual('app');
   });
-
+  it('Is the css class called app__page ', () => {
+    const   fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
+    expect(fixture.debugElement.children[0].children[0].attributes.class).toEqual('app__page');
+  });
 });
