@@ -8,10 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display Our Team', () => {
     browser.sleep(5000);
     page.navigateTo();
     expect(page.getTitleText()).toEqual('Our Team');
   });
-
 });

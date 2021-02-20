@@ -9,9 +9,9 @@ import { Block, ImageUrl } from './model';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit ,OnDestroy {
-  subscription: Subscription 
-  title: string = ''; 
+export class HomeComponent implements OnInit, OnDestroy {
+  subscription: Subscription
+  title: String = '';
   firstListOfMembershipCards: Block = {};
   secondListOfMembershipCards: Block = {};
   thirdListOfMembershipCards: Block = {};
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit ,OnDestroy {
   secondListOfMembershipCardsImageUrl: ImageUrl = {};
   thirdListOfMembershipCardsImageUrl: ImageUrl = {};
 
-  constructor(private memberCardsService: MemberCardsService) {}
+  constructor(private memberCardsService: MemberCardsService) { }
 
   ngOnInit(): void {
     this.subscription = this.memberCardsService.getMemberCards().subscribe(value => {
@@ -27,12 +27,12 @@ export class HomeComponent implements OnInit ,OnDestroy {
       this.firstListOfMembershipCards = value.attributes.memberCards.first.block;
       this.secondListOfMembershipCards = value.attributes.memberCards.second.block;
       this.thirdListOfMembershipCards = value.attributes.memberCards.third.block;
-      this.firstListOfMembershipCardsImageUrl = value.attributes.memberCards.first.imageUrl.w200;
-      this.secondListOfMembershipCardsImageUrl = value.attributes.memberCards.second.imageUrl.w200;
-      this.thirdListOfMembershipCardsImageUrl = value.attributes.memberCards.third.imageUrl.w200;
+      this.firstListOfMembershipCardsImageUrl = value.attributes.memberCards.first.imageUrl;
+      this.secondListOfMembershipCardsImageUrl = value.attributes.memberCards.second.imageUrl;
+      this.thirdListOfMembershipCardsImageUrl = value.attributes.memberCards.third.imageUrl;
     })
   }
   ngOnDestroy() {
     this.subscription.unsubscribe()
-}
+  }
 }

@@ -30,10 +30,14 @@ export interface Third {
 }
 export interface Attributes {
     title?: String;
-    memberCards: MemberCard;
+    memberCards?: MemberCard;
+
 }
 export interface Data {
-    type?: String;
+    attributes?: Attributes;
     id?: String;
-    attributes?: Attributes
+    type?: String;
+}
+export interface ModelData {
+    data?: Data[]
 }
