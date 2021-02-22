@@ -1,71 +1,68 @@
-
-        <div class="dashboard">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="dashboard__section">
-                            <div class="dashboard__heading">
-                                <h2>{{title}}</h2>
+<div class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="dashboard__section">
+                    <div class="dashboard__heading">
+                        <h2>{{title}}</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="card__section">
+                            <div class="card__icons-wrapper">
+                                <img [src]='firstListOfMembershipCardsImageUrl.w200'>
                             </div>
-                            <div class="cards">
-                                <div class="card__section">
-                                    <div class="card__icons-wrapper">
-                                        <img [src]='firstListOfMembershipCardsImageUrl.w200' >
-                                    </div>
-                                    <div class="card__info-wrapper">
-                                        <div class="card__info-wrapper--title">
-                                            {{firstListOfMembershipCards.title}}
-                                        </div>
-                                        <div class="card__info-wrapper--description">
-                                            {{firstListOfMembershipCards.description}}
-                                        </div>
-                                        <div class="card__info-wrapper--link">
-                                            {{firstListOfMembershipCards.link}}
-                                        </div>
-                                        <div class="card__info-wrapper--text">
-                                            {{firstListOfMembershipCards.text}}
-                                        </div>
-                                    </div>
+                            <div class="card__info-wrapper">
+                                <div class="card__info-wrapper--title">
+                                    {{firstListOfMembershipCards.title}}
                                 </div>
-                                <div class="card__section">
-                                    <div class="card__icons-wrapper">
-                                        <img [src]='secondListOfMembershipCardsImageUrl.w200'
-                                            alt='{{secondListOfMembershipCards.title}}'>
-                                    </div>
-                                    <div class="card__info-wrapper">
-                                        <div class="card__info-wrapper--title">
-                                            {{secondListOfMembershipCards.title}}
-                                        </div>
-                                        <div class="card__info-wrapper--description">
-                                            {{secondListOfMembershipCards.description}}
-                                        </div>
-                                        <div class="card__info-wrapper--link">
-                                            {{secondListOfMembershipCards.link}}
-                                        </div>
-                                        <div class="card__info-wrapper--text">
-                                            {{secondListOfMembershipCards.text}}
-                                        </div>
-                                    </div>
+                                <div class="card__info-wrapper--description">
+                                    {{firstListOfMembershipCards.description}}
                                 </div>
-                                <div class="card__section">
-                                    <div class="card__icons-wrapper">
-                                        <img [src]='thirdListOfMembershipCardsImageUrl.w200'
-                                            alt='{{firstListOfMembershipCards.title}}'>
-                                    </div>
-                                    <div class="card__info-wrapper">
-                                        <div class="card__info-wrapper--title">
-                                            {{thirdListOfMembershipCards.title}}
-                                        </div>
-                                        <div class="card__info-wrapper--description">
-                                            {{thirdListOfMembershipCards.description}}
-                                        </div>
-                                        <div class="card__info-wrapper--link">
-                                            {{thirdListOfMembershipCards.link}}
-                                        </div>
-                                        <div class="card__info-wrapper--text">
-                                            {{thirdListOfMembershipCards.text}}
-                                        </div>
-                                    </div>
+                                <div class="card__info-wrapper--link">
+                                    {{firstListOfMembershipCards.link}}
+                                </div>
+                                <div class="card__info-wrapper--text">
+                                    {{firstListOfMembershipCards.text}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__section">
+                            <div class="card__icons-wrapper">
+                                <img [src]='secondListOfMembershipCardsImageUrl.w200'
+                                    alt='{{secondListOfMembershipCards.title}}'>
+                            </div>
+                            <div class="card__info-wrapper">
+                                <div class="card__info-wrapper--title">
+                                    {{secondListOfMembershipCards.title}}
+                                </div>
+                                <div class="card__info-wrapper--description">
+                                    {{secondListOfMembershipCards.description}}
+                                </div>
+                                <div class="card__info-wrapper--link">
+                                    {{secondListOfMembershipCards.link}}
+                                </div>
+                                <div class="card__info-wrapper--text">
+                                    {{secondListOfMembershipCards.text}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__section">
+                            <div class="card__icons-wrapper">
+                                <img [src]='thirdListOfMembershipCardsImageUrl.w200'
+                                    alt='{{firstListOfMembershipCards.title}}'>
+                            </div>
+                            <div class="card__info-wrapper">
+                                <div class="card__info-wrapper--title">
+                                    {{thirdListOfMembershipCards.title}}
+                                </div>
+                                <div class="card__info-wrapper--description">
+                                    {{thirdListOfMembershipCards.description}}
+                                </div>
+                                <div class="card__info-wrapper--link">
+                                    {{thirdListOfMembershipCards.link}}
+                                </div>
+                                <div class="card__info-wrapper--text">
+                                    {{thirdListOfMembershipCards.text}}
                                 </div>
                             </div>
                         </div>
@@ -73,4 +70,5 @@
                 </div>
             </div>
         </div>
- 
+    </div>
+</div>

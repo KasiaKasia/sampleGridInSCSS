@@ -31,7 +31,6 @@ export interface Third {
 export interface Attributes {
     title?: String;
     memberCards?: MemberCard;
-
 }
 export interface Data {
     attributes?: Attributes;
