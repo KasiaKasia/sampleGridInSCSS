@@ -1,10 +1,13 @@
 .cards{ 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+ 
     .card__section {
         box-shadow: $shadow-20;
-        margin: 0 1rem;
+        margin: 1rem;
+        flex-basis: 20%;
         .card__icons-wrapper {
             width: 200px;
             height: 150px;
